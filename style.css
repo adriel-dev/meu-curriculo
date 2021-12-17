@@ -1,0 +1,50 @@
+body{
+    background-image: url("img/util/tech-image-2.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh !important;
+}
+
+.container{
+    background-color: rgba(247, 247, 247, 0.87);
+}
+
+#imgProfile{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transform: rotate(-30deg);
+}
+
+.card{
+    cursor: pointer;
+}
+
+.collapseHeader{
+    cursor: pointer;
+    height: 40px;
+    vertical-align: middle;
+}
+
+.iconChevron{
+    margin-left: auto;
+}
+
+.logo{
+    height: 80px;
+    width: 100px;
+    transition: 1s;
+}
+
+.logo:hover{
+    transform: scale(1.3);
+}
+
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+    color: white;
+}
