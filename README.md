@@ -1,5 +1,7 @@
 # Currículo
 
+https://adriel-dev.github.io/meu-curriculo/
+
 Tecnologias utilizadas na criação da página:
 
 <div style="display: inline_block"><br>
