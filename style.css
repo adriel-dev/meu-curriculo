@@ -116,7 +116,7 @@ ul {
 }
 
 li::before {
-    content: url('/img/util/selo.svg');
+    content: url('./img/util/selo.svg');
     display: inline-block;
     vertical-align: middle;
 }
@@ -132,7 +132,7 @@ li::before {
 }
 
 #bannerContainer{
-    background-image: url('/img/util/wallpaper-programming.png');
+    background-image: url('./img/util/wallpaper-programming.png');
     background-color: var(--container-bg);
     background-repeat: no-repeat;
     background-size: cover;
