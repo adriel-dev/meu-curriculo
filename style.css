@@ -142,10 +142,6 @@ li::before {
     border-radius: 10px 10px 0px 0px;
 }
 
-#smallDevices{
-    display: none;
-}
-
 #btnImprimir{
     position: fixed;
     bottom: 30px;
