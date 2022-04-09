@@ -131,6 +131,14 @@ li::before {
     margin-top: -90px;
 }
 
+#qrCodeContainer{
+    position: absolute;
+    align-self: flex-end;
+    margin-top: 20px;
+    padding-right: 50px;
+    display: none;
+}
+
 #bannerContainer{
     background-image: url('./img/util/wallpaper-programming.png');
     background-color: var(--container-bg);
@@ -194,6 +202,10 @@ li::before {
     #mainInfo{
         margin-top: 0;
         flex-direction: column;
+    }
+
+    #qrCodeContainer{
+        display: block;
     }
 
     @page{
