@@ -161,6 +161,8 @@ li::before {
     cursor: pointer;
     box-shadow: 5px 5px 15px -7px #000000;
     transition: 0.5s;
+    width: 50px;
+    height: 50px;
 }
 
 #btnImprimir:hover{
