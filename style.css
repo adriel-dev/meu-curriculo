@@ -58,6 +58,10 @@ body{
     justify-content: space-between;
 }
 
+#checkboxThemeContainer input, label{
+    cursor: pointer;
+}
+
 #mainContent{
     justify-content: center;
     align-items: center;
@@ -172,7 +176,24 @@ li::before {
 }
 
 #btnImprimir:hover{
-    transform: scale(1.15);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.95);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
 
 @media screen and (max-width: 835px) {
