@@ -146,29 +146,62 @@ li::before {
     display: none;
 }
 
-@media (max-width: 835px) {
+#btnPrint{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #3B67C1;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 5px 5px 15px -7px #000000;
+    transition: 0.5s;
+}
+
+#btnPrint:hover{
+    transform: scale(1.15);
+}
+
+@media screen and (max-width: 835px) {
+    .info-box{
+        max-width: 85vw;
+    }
+
+    #textContainer{
+        flex-direction: column;
+    }
+
+    #expEduInfoContainer{
+        margin: 15px 0 0 0;
+    }
+}
+
+@media print {
     #pageConfig{
         display: none;
     }
 
+    #btnPrint{
+        display: none;
+    }
+
+    .info-box{
+        border: none;
+        margin-top: 0;
+    }
+
     #mainContent{
-        display: none;
+        padding: 0px 30px 0px 30px;
     }
 
-    #pageLinks{
-        display: none;
-    }
-
-    #smallDevices{
-        min-height: 100vh;
-        display: flex;
+    #mainInfo{
+        margin-top: 0;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
     }
 
-    #smallDevices span{
-        margin-top: 15px;
+    @page{
+        size: auto;
+        margin: 0;
     }
 }
